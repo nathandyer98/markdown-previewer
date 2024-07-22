@@ -70,7 +70,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>Markdown Previewer</h1>
+        <h1 id="main-header">Markdown Previewer</h1>
         <div className="boxes-container">
           <div id="editor-div">
             <h2 id="editor-header">Editor</h2>

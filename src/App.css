@@ -1,6 +1,3 @@
-/* App.css */
-
-/* Base styles for the entire application */
 body {
     font-family: Arial, sans-serif;
     background-color: #121212;
@@ -11,46 +8,47 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
-  
-  /* Main container */
-  .App {
+}
+
+.App {
     width: 60%;
-  }
+}
+
+#main-header{
+    position: fixed;
+    left: 45vw;
+    top: 3vw
+}
   
-  /* Header */
-  h1 {
+h1 {
     font-size: 55;
     font-weight:750 ;
     color: #e7e2ec;
     margin-bottom: 20px;
-    margin-left: 40vw;
-  }
+}
   
-  /* Boxes container */
-  .boxes-container {
+.boxes-container {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-  }
-  
-  /* Editor and preview containers */
-  #editor-div, #preview-div {
+}
+
+#editor-div, #preview-div {
     flex: 1;
     display: flex;
     flex-direction: column;
-  }
+}
   
-  #editor-header, #preview-header {
+#editor-header, #preview-header {
     text-align: center;
     background-color: #1e1e1e;
     padding: 10px;
     border-radius: 5px 5px 0 0;
     margin: 0;
-  }
+}
   
-  /* Editor textarea */
-  #editor {
+#editor {
+    width: 25vw;
     flex: 1;
     background-color: #1e1e1e;
     color: #e0e0e0;
@@ -59,10 +57,10 @@ body {
     border-radius: 0 0 5px 5px;
     outline: none;
     font-size: 16px;
-  }
+}
   
-  /* Preview area */
-  #preview {
+#preview {
+    width: 50vw;
     flex: 1;
     background-color: #1e1e1e;
     color: #e0e0e0;
@@ -70,47 +68,47 @@ body {
     padding: 20px;
     border-radius: 0 0 5px 5px;
     overflow-y: auto;
-  }
+}
   
-  #preview h1, #preview h2, #preview h3, #preview h4, #preview h5, #preview h6 {
+#preview h1, #preview h2, #preview h3, #preview h4, #preview h5, #preview h6 {
     color: #bb86fc;
-  }
+}
   
-  #preview code {
+#preview code {
     background-color: #2d2d2d;
     padding: 2px 4px;
     border-radius: 4px;
-  }
+}
   
-  #preview pre {
+#preview pre {
     background-color: #2d2d2d;
     padding: 10px;
     border-radius: 5px;
     overflow-x: auto;
-  }
+}
   
-  #preview a {
+#preview a {
     color: #bb86fc;
-  }
+}
   
-  #preview blockquote {
+#preview blockquote {
     border-left: 4px solid #bb86fc;
     padding-left: 10px;
     color: #aaaaaa;
-  }
+}
   
-  #preview table {
+#preview table {
     width: 100%;
     border-collapse: collapse;
-  }
+}
   
-  #preview th, #preview td {
+#preview th, #preview td {
     border: 1px solid #444444;
     padding: 10px;
     text-align: left;
-  }
+}
   
-  #preview th {
+#preview th {
     background-color: #333333;
-  }
+}
   
