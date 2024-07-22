@@ -1,42 +1,116 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+/* App.css */
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Base styles for the entire application */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Main container */
+  .App {
+    width: 60%;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  
+  /* Header */
+  h1 {
+    font-size: 55;
+    font-weight:750 ;
+    color: #e7e2ec;
+    margin-bottom: 20px;
+    margin-left: 40vw;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+  
+  /* Boxes container */
+  .boxes-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  /* Editor and preview containers */
+  #editor-div, #preview-div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #editor-header, #preview-header {
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    margin: 0;
+  }
+  
+  /* Editor textarea */
+  #editor {
+    flex: 1;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: none;
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  /* Preview area */
+  #preview {
+    flex: 1;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    resize: both;
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+    overflow-y: auto;
+  }
+  
+  #preview h1, #preview h2, #preview h3, #preview h4, #preview h5, #preview h6 {
+    color: #bb86fc;
+  }
+  
+  #preview code {
+    background-color: #2d2d2d;
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
+  
+  #preview pre {
+    background-color: #2d2d2d;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+  }
+  
+  #preview a {
+    color: #bb86fc;
+  }
+  
+  #preview blockquote {
+    border-left: 4px solid #bb86fc;
+    padding-left: 10px;
+    color: #aaaaaa;
+  }
+  
+  #preview table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #preview th, #preview td {
+    border: 1px solid #444444;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  #preview th {
+    background-color: #333333;
+  }
+  
